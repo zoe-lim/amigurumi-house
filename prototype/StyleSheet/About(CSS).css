@@ -1,0 +1,121 @@
+/*--allow for smooth-scrolling--*/
+html {
+  scroll-behavior: smooth;
+}
+
+/*--input image background for body--*/
+body{
+    background-color: floralwhite;
+}
+
+/*--style heading of body--*/
+.heading{
+    text-align: center;
+    font-family: "Segoe Print";
+    padding: 15px;
+}
+    /*--style title--*/
+    h1 span{
+        display: block;
+        padding: 30px;
+        background-image: url(../Images/title%20bg.png);
+        background-size: cover;
+        border: none;
+        border-radius: 25px;
+    }
+    /*--style link for smooth scroll--*/
+    .heading a{
+        background-color: powderblue;
+        padding: 10px;
+        margin: 3px;
+        border: none;
+        border-radius: 25px;
+        color: black;
+        text-decoration: none;
+    }
+
+/*--style content container--*/
+.about-container {
+    font-family: Comic Sans MS;
+    width: 100%;
+    margin: auto;
+    padding: 8px;
+}
+
+.about-content{
+    display: block;
+    font-size: 20px;
+    padding: 15px;
+    margin: auto;
+    border-radius: 25px;
+    background-color: rgba(175, 238, 238, 0.4);
+    text-align: center;
+    margin-bottom: 15px;
+}
+.title {
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+    background-image: url(../Images/cloud.png);
+    background-size: 100% 125%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+    /*--for tablet--*/
+    @media only screen and (min-width: 600px) {
+        h1{
+            display: block;
+            width: 80%;
+            margin: auto;
+        }
+        .about-container {
+            width: 80%;
+            margin: auto;
+        }
+    }
+    /*--for laptop--*/
+    @media only screen and (min-width: 900px) {
+        .about-container {
+            width: 80%;
+            margin: auto;
+        }
+    }
+
+/*--style enquiry box--*/
+.enquiry-box{
+    padding: 10px;
+}
+#name, #Email{
+   margin-top: 10px;
+}
+#enquiry-area{
+    border: none;
+    border-radius: 25px;
+    font-family: "Segoe Print";
+    padding: 15px;
+    margin-top: 10px;
+    background-color: lavenderblush;
+}
+#enquiry-area:focus{
+    outline: none;
+    background-color: aliceblue;
+}
+    /*--submit button--*/
+    input[type=submit] {
+        background-color: turquoise;
+        color: darkslategray;
+        margin-top: 15px;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        font-family: "Segoe Print";
+        font-size: 18px;
+    }
+
+    input[type=submit]:hover {
+        background-color: darkturquoise;
+    }
+    input[type=submit]:focus{
+        outline: none;
+    }

@@ -1,0 +1,147 @@
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+    .col-xs-1 {width: 8.33%;}
+    .col-xs-2 {width: 16.66%;}
+    .col-xs-3 {width: 25%;}
+    .col-xs-4 {width: 33.33%;}
+    .col-xs-5 {width: 41.66%;}
+    .col-xs-6 {width: 50%;}
+    .col-xs-7 {width: 58.33%;}
+    .col-xs-8 {width: 66.66%;}
+    .col-xs-9 {width: 75%;}
+    .col-xs-10 {width: 83.33%;}
+    .col-xs-11 {width: 91.66%;}
+    .col-xs-12 {width: 100%;}
+}
+
+/*-for tablets-*/
+@media only screen and (min-width: 768px) {
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+
+/*--for laptop--*/
+@media only screen and (min-width: 900px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+/*--style background--*/
+body{
+    background-color: floralwhite;
+}
+
+/*--style heading of body--*/
+.heading{
+    text-align: center;
+    font-family: "Segoe Print";
+    padding: 15px;
+}
+    /*--style title--*/
+    h1 span{
+        display: block;
+        padding: 30px;
+        background-image: url(../Images/title%20bg.png);
+        background-size: cover;
+        border: none;
+        border-radius: 25px;
+    }
+    /*--for tablet & laptop--*/
+        @media only screen and (min-width: 600px) {
+            h1{
+                display: block;
+                width: 80%;
+                margin: auto;
+            }
+        }
+
+/*--style tutorial for amigurumi patterns--*/
+.tutorial-container{
+    padding: 20px;
+    padding-bottom: 30px;
+    overflow: hidden;
+}
+.content {
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.tutorial img {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+    padding: 10px;
+}
+    /*--add darker border when hover--*/
+    .content:hover {
+        border: 1px solid #777;
+    }
+    /*--style description text--*/
+    .description {
+        text-align: center;
+        font-family: Comic Sans MS;
+        font-size: 18px;
+        padding: 10px;
+    }
+    /*--for tablet--*/
+    /*--float tutorials next to each other--*/
+    @media only screen and (min-width: 768px) {
+            .tutorial {
+                float: left;
+                width: 32%;
+            }
+            .tutorial-container::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+        }
+    /*--for laptop--*/
+    /*--float tutorials next to each other--*/
+    @media only screen and (min-width: 900px) {
+        .tutorial {
+            float: left;
+            width: 25%;
+        }
+        .tutorial-container::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    }
+
+/*--style checkbox--*/
+.check-box{
+    text-align: center;
+    font-family: Comic Sans MS; 
+}
+.beginner-checkbox, .intermediate-checkbox, .advanced-checkbox{
+    display: inline-block;
+    background-color: powderblue;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    margin: 10px;
+}
