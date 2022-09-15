@@ -1,0 +1,341 @@
+/*--Header background--*/
+header {
+    border: none;
+    background-image: url('../Images/headerbackground.jpg');
+}
+
+/*--Header logo--*/
+    /*--Centralise the logo--*/
+    .logo {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 65%;
+    }
+    /*--for tablet & laptop--*/
+    @media screen and (min-width: 768px) {
+        .logo {
+            width: 50%;
+        }
+    }
+
+/*--Navigation Bar--*/
+    /*--for phone--*/
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    /*--make navbar sticky (remain at top when scrolling throught the page)*/
+    .navbar-container{
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+    }
+    /*--style nav bar--*/
+    .navbar{
+        font-size: 18px;
+        font-family: "Segoe Print";
+        background-color: powderblue;
+        padding-bottom: 10px;
+    }
+    .mainnav{
+        list-style-type: none;
+        display: none;
+    }
+    .mainnav li {
+        text-align: center;
+        margin: 0px;
+        display: block;
+        background-color: powderblue;
+    }
+    .mainnav li a {
+        display: block;
+        color: darkslategray;
+        text-align: center;
+        padding: 5px;
+        text-decoration: none;
+    }
+    .active {
+          display: block;
+    }
+        /*--style nav bar when hover over--*/
+            .mainnav li a:hover{
+                background-color: azure;
+            }
+            .navbar-icon {
+                float: right;
+                padding-right: 15px;
+                padding-top: 5px;
+                font-size: 24px;
+            }
+    
+    /*--navbar for tablet & desktop--*/
+    @media screen and (min-width: 768px) {
+        /*--Style nav bar--*/
+        .navbar {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 0;
+            height: 60px;
+            align-items: center;
+            font-size: 20px;
+        }
+        .mainnav {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+            /*--style nav tags--*/
+            .mainnav li {
+                margin: 0;
+            }
+            .mainnav li a{
+                padding-top: 8px;
+                padding-bottom: 8px;
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+            /*--style current page nav tag--*/
+            .mainnav li a:(.CurrentPage) {
+                background-color: powderblue;
+            }
+            .CurrentPage {
+                background-image: url(../Images/cloud.png);
+                background-repeat: no-repeat;
+                background-size: 100% 120%;
+                background-position: top;
+
+            }
+            .mainnav li a:hover{
+                background-color: powderblue;
+                background-image: url(../Images/cloud.png);
+                background-repeat: no-repeat;
+                background-size: 100% 120%;
+                background-position: top;
+        }
+        
+        /*--hide navbar icon when in table or desktop--*/
+        .navbar-icon {
+            display: none;
+        }
+
+    }
+
+/*--footer--*/
+.footer-container{
+    display: inline-block; 
+    background-color: powderblue;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+    /*--style all 3 coloumns in footer--*/
+    #footer1, #footer2, #footer3{
+        background-color: powderblue;
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 20px;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    /*--indiv style of first coloumn of footer--*/
+    #footer1{
+        text-align: center;
+        font-family: "Segoe Print";
+    }
+        /*--style sign up button--*/
+        .signup-button{
+            font-family: "Segoe Print";
+        }
+        .sign-up:focus{
+            outline: none;
+        }
+            /*--Full-width input fields--*/
+            input[type=text], input[type=password] {
+                font-family: "Segoe Print";
+                width: 100%;
+                padding: 15px;
+                margin: 5px 0 22px 0;
+                display: inline-block;
+                border: none;
+                border-radius: 25px;
+                background: lavenderblush;
+            }
+            /*--Add a background color when the inputs get focus--*/
+            input[type=text]:focus, input[type=password]:focus {
+                background-color: aliceblue;
+                outline: none;
+            } 
+            /*--style all buttons--*/
+            .sign-up, .cancelbtn, .signupbtn {
+                background-color: azure;
+                color: darkslategray;
+                font-family: "Segoe Print";
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 25px;
+                cursor: pointer;
+                width: 100%;
+                opacity: 0.9;
+            }
+            .sign-up, .cancelbtn, .signupbtn:hover {
+                opacity:1;
+            }
+            /*--extra styles for the cancel & signup button--*/
+            .cancelbtn {
+                padding: 14px 20px;
+                background-color: salmon;
+            }
+            .signupbtn{
+                background-color: turquoise;
+            }
+            .cancelbtn, .signupbtn:focus{
+                outline: none;
+            }
+            /*--float cancel and signup buttons & add an equal width--*/
+            .cancelbtn, .signupbtn {
+                float: left;
+                width: 50%;
+            }
+            /*--add padding to container elements--*/
+            .container {
+                padding: 16px;
+            }
+            /* The Modal (background) */
+            .modal {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 1000; /* Sit on top */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: #474e5d;
+                padding-top: 50px;
+            }
+            /* Modal Content/Box */
+            .modal-content {
+                background-color: powderblue;
+                margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+                border: 1px solid #888;
+                width: 80%; /* Could be more or less, depending on screen size */
+            }
+            /* Style the horizontal ruler */
+            .signuphr {
+                border: 1px solid darkslategrey ;
+                margin-top: 15px;
+                margin-bottom: 25px;
+            }
+            /* The Close Button (x) */
+            .close {
+                position: absolute;
+                right: 35px;
+                top: 15px;
+                font-size: 40px;
+                font-weight: bold;
+                color: #f1f1f1;
+            }
+            .close:hover,
+            .close:focus {
+                color: #f44336;
+                cursor: pointer;
+            }
+            /* Clear floats */
+            .clearfix::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+            /* Change styles for cancel button and signup button on extra small screens */
+            @media screen and (max-width: 300px) {
+                .cancelbtn, .signupbtn {
+                    width: 100%;
+                }
+            }
+    /*--indiv style of sec coloumn of footer--*/
+    #footer2{
+        line-height: 2;
+        float: left; /*--2nd & 3rd coloumn of footer align side by side for phone--*/
+        width: 50%;
+        font-family: "Segoe Print";
+    } 
+        /*--style the links in sec coloumn--*/
+        .text-under-overview, .text-under-about:link{     /*--remove underline on link--*/
+            text-decoration: none;
+        }
+        .text-under-overview, .text-under-about{     /*--change colour of link*/
+            color: black;
+        }
+        .text-under-about{
+            padding-left: 15px;
+            line-height: 1.8;
+        }
+    /*--indiv style of third coloumn of footer--*/
+    #footer3{
+        float: left; /*--2nd & 3rd coloumn of footer align side by side for phone--*/
+        width: 50%;
+        font-family: "Segoe Print";
+    }
+        /*--style search bar & button--*/
+        .search-bar input[type=text] {
+            width: 50%;
+            padding: 3px;
+            margin-top: 8px;
+            font-size: 12px;
+            border-radius: 25px;
+            border: 1.5px solid black;
+        }
+        .search-bar button {
+            padding: 6px 6px;
+            margin-top: 10px;
+            background: #ddd;
+            font-size: 12px;
+            border-radius: 25px;
+            border: 1.5px solid black;
+            cursor: pointer;
+        }
+        .search-bar button:hover {
+            background: #ccc;
+        }
+        .search-bar button:focus{
+            outline: none;
+        }
+        /*--style horizontal line to separate info--*/
+        hr{
+            background-color: darkslategray;
+            margin-bottom: 18px;
+        }
+        /*--style social media icons*/
+        .socialmedia-icons { 
+            font-size: 22px;
+            padding-top: 5px;
+            padding-bottom: 16px;
+            text-decoration: none;
+        }
+            /*--remove underline on link & change colour--*/
+            .fab:link{
+                text-decoration: none;
+            }
+            .fab{
+                color: darkslategray;
+            }
+        /*--style area for copyright issues--*/
+        .far{
+            font-size: 13px;
+            padding-top: 10px;
+            font-family: "Segoe Print";
+            }
+    /*--for tablet & laptop--*/
+    @media only screen and (min-width: 768px){
+        #footer1, #footer2, #footer3{
+            float: left; /*--all 3 coloumn of footer align side by side for tablet & laptop--*/
+            width: 33.33%;
+        }
+        #footer2{
+            padding-left: 100px;
+        }
+    }
